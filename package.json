@@ -19,9 +19,6 @@
   "bugs": {
     "url": "https://github.com/josedan10/konva-grid/issues"
   },
-  "publishConfig": {
-    "@josedan10:registry": "https://npm.pkg.github.com"
-  },
   "dependencies": {
     "konva": "8.3.6",
     "react-konva": "18.0.0-0"
