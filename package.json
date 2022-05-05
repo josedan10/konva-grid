@@ -1,5 +1,5 @@
 {
-  "name": "react-konva-grid",
+  "name": "react-konva-grid-18",
   "description": "Canvas grid to render large set of tabular data with virtualization.",
   "version": "1.0.3",
   "main": "dist/index.js",
