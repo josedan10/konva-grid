@@ -214,59 +214,59 @@ const Grid: React.FC<IProps> = (props) => {
   }
 
   return (
-    <div style={{ position: "relative", width: containerWidth + 20 }}>
-      <div
-        style={{
-          height: containerHeight,
-          overflow: "scroll",
-          position: "absolute",
-          right: 0,
-          top: 0,
-          width: scrollbarSize,
-          background: "#666",
-        }}
-        onScroll={handleScroll}
-        ref={verticalScrollRef}
-      >
-        <div
-          style={{
-            position: "absolute",
-            height: scrollHeight,
-            width: 1,
-          }}
-        />
-      </div>
-      <div
-        style={{
-          overflow: "scroll",
-          position: "absolute",
-          bottom: -scrollbarSize,
-          left: 0,
-          width: containerWidth,
-          height: scrollbarSize,
-          background: "#666",
-        }}
-        onScroll={handleScrollLeft}
-        ref={horizontalScrollRef}
-      >
-        <div
-          style={{
-            position: "absolute",
-            width: scrollWidth,
-            height: 1,
-          }}
-        />
-      </div>
-      <div onWheel={handleWheel} tabIndex={-1}>
-        <Stage width={containerWidth} height={containerHeight}>
-          <Layer>
+    // <div style={{ position: "relative", width: containerWidth + 20 }}>
+    //   <div
+    //     style={{
+    //       height: containerHeight,
+    //       overflow: "scroll",
+    //       position: "absolute",
+    //       right: 0,
+    //       top: 0,
+    //       width: scrollbarSize,
+    //       background: "#666",
+    //     }}
+    //     onScroll={handleScroll}
+    //     ref={verticalScrollRef}
+    //   >
+    //     <div
+    //       style={{
+    //         position: "absolute",
+    //         height: scrollHeight,
+    //         width: 1,
+    //       }}
+    //     />
+    //   </div>
+    //   <div
+    //     style={{
+    //       overflow: "scroll",
+    //       position: "absolute",
+    //       bottom: -scrollbarSize,
+    //       left: 0,
+    //       width: containerWidth,
+    //       height: scrollbarSize,
+    //       background: "#666",
+    //     }}
+    //     onScroll={handleScrollLeft}
+    //     ref={horizontalScrollRef}
+    //   >
+    //     <div
+    //       style={{
+    //         position: "absolute",
+    //         width: scrollWidth,
+    //         height: 1,
+    //       }}
+    //     />
+    //   </div>
+    //   <div onWheel={handleWheel} tabIndex={-1}>
+    //     <Stage width={containerWidth} height={containerHeight}>
+    //       <Layer>
             <Group offsetY={scrollTop} offsetX={scrollLeft}>
               {items}
             </Group>
-          </Layer>
-        </Stage>
-      </div>
-    </div>
+    //       </Layer>
+    //     </Stage>
+    //   </div>
+    // </div>
   );
 };
 
