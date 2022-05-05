@@ -11,21 +11,24 @@
     "prepublish": "yarn build",
     "prettier": "prettier src/**/*.tsx --write"
   },
-  "author": "Vinay M <rmdort@gmail.com>",
+  "author": "José Quintero <josedanq100@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rmdort/konva-grid.git"
+    "url": "https://github.com/josedan10/konva-grid.git"
   },
   "bugs": {
-    "url": "https://github.com/rmdort/konva-grid/issues"
+    "url": "https://github.com/josedan10/konva-grid/issues"
+  },
+  "publishConfig": {
+    "@josedan10:registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
-    "konva": "^6.0.0",
-    "react-konva": "^16.13.0-3"
+    "konva": "8.3.6",
+    "react-konva": "18.0.0-0"
   },
   "peerDependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "18.1.0",
+    "react-dom": "18.1.0"
   },
   "husky": {
     "hooks": {
